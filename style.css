@@ -23,7 +23,7 @@ h1 {
 /* 4 thumbnails in a row */
 .thumbnails {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 12px;
   margin-bottom: 20px;
 }
@@ -46,7 +46,7 @@ h1 {
 
 .thumb.active {
   opacity: 1;
-  border-color: #f5a623;
+  border-color: #e8fc77;
 }
 
 /* Large display section */
@@ -74,30 +74,3 @@ h1 {
   font-size: 1.1rem;
 }
 
-/* Pause / Play buttons */
-.controls {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-  margin-top: 16px;
-}
-
-.controls button {
-  padding: 10px 24px;
-  font-size: 1rem;
-  border: none;
-  border-radius: 6px;
-  background-color: #f5a623;
-  color: #1e1e24;
-  cursor: pointer;
-}
-
-.controls button:hover {
-  background-color: #ffbe4d;
-}
-
-.controls button:disabled {
-  background-color: #55555f;
-  color: #9a9aa3;
-  cursor: default;
-}
